@@ -3,7 +3,7 @@
 # 2. run the container
 # sudo docker compose up -d
 # 3. attach to the container
-# sudo docker exec -it ubuntu_container bash
+# sudo docker exec -it ubuntu_container bash      
 
 services:
   my_ubuntu_servicce:
@@ -15,4 +15,4 @@ services:
     tty: true
     command: tail -f /dev/null  # Keeps the container running
     volumes:
-      - ./shared_ubuntu_container:/shared_ubuntu_container  
+      - ./shared_ubuntu_container:/root/shared_ubuntu_container  
